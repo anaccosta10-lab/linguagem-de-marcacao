@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<meta charset="UTF-8">
+	<title>Exercício 1</title>
+	</head>
+	<body>
+		<form action="#" method="POST">
+		<label for="codigo">Código: </label>
+		<br>
+		<input type="number;"; id="codigo" name="codigo" value="0" disabled>
+		<br><br>
+
+		<label for="ctt">N° do Contato:</label>
+		<input type="number" id="ctt"  required>
+		<label for="loja">N° da Loja: </label>
+			<input type="number" id="number" name="loja" required>
+			<br><br>
+
+		<label for="descricao">Descrição:</label>
+		<input type="text" id="descricao" name="descricao" required>
+		<br>
+
+		<label for="data">Data:</label>
+		<input type="date" id="data" name="data" required>
+		<br><br>
+
+		<label for="operadora">Operadora:</label>
+		<input type="number" id="operadora" name="operadora" required>
+		<br>
+
+		<label for="filial">Filial:</label>
+		<input type="number" id="filial" name="filial" required>
+		<br>
+		<label for="empresa_matriz">Empresa Matriz:</label>
+		<input type="number" id="empresa_matriz" name="empresa_matriz" required>
+		<br>
+
+		<label for="contas">Origem das Contas Contabeis</label>
+		<select name="contas" id="contas" required>
+		<option value="">Contrato</option>
+		<option value="claro">Claro</option>
+		<option value="tim">Tim</option>
+		<option value="vivo">Vivo</option>
+		<option value="oi">OI</option>
+		<option value="intercel">Inter Cel</option>
+		<input type="checkbox" id="deposito" name="deposito">Depósito na conta informada no arquivo</input>
+		</select>
+		<br>
+		<label for="status">Status do Contato</label>
+		<select name="status" id="status" required>
+		<option value="ativo">Ativo</option>
+		<option value="inativo">Inativo</option>
+		<option value="pendente">Pendente</option>
+		 <input type="checkbox" id="conciliacao" name="conciliacao">Conciliação consolidade</input>
+		</select>
+		<br>
+		<label for="identificar">identificar comprovantepor</label>
+		<select name="identificar" id="identificar" required>
+			<option value="codigo de barra">Codigo de barra</option>
+			<option value="poleto">Poleto</option>
+			<option value="qr code">Qr code</option>
+			<input type="checkbox" id="remover zeros" name="removerzeros">Remover zeros esquerda do N° comporvante</input>  <input type="checkbox" id="validar" name="validar">Validar valores na conciliação automatica</input>
+		</select>
+		<br>
+		<input type="checkbox" id="usar" name="usar">Usar campo de usuário [Data da transação do Cartão] do contas a receber para identificar o comprovante na conciliação</input>
+		<br>
+		<input type="checkbox" id="gerar" name="gerar">Gerar contas a receber por conta para comprovantes não identificados</input> <input type="checkbox" id="contas" name="contas">Contas a receber Agrupado</input>
+		<br>
+		<input type="checkbox" id="usar" name="usar">Usar projeto do cadastro de equipamento</input>
+		<br>
+		<label for="cartao">Cartão:</label>
+		
+			</form>
+</body>
+</html>
